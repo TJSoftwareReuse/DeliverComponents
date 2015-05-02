@@ -4,6 +4,7 @@
 1. 构件名： FailureManager
 2. 功能：该构件可接收应用程序的告警信息并输出告警信息到一个单独的告警文件
 3. 其他
+	* 使用构件前应导入： ```import com.manager.failure.FailureManager;```
 	* 构件支持5种警告类型，分别为
 		1. INFO （information）
 		2. DEBUG （debug）
@@ -11,10 +12,8 @@
 		3. ERROR （error）
 		4. FATAL （fatal）
 	* 所有警告信息输出到一个文件中，格式为：```时间戳 警告类型 警告信息``` 具体可见示例
-	* 用户可以更换输出文件，方法有两种：
-		1. 直接修改log4j.properties文件中的: ```log4j.appender.FILE.File=文件名```
-		2. 使用构件提供的API在运行中修改
-	* 该构件线程安全
+	* 用户可以使用构件提供的API在运行中更换输出文件。
+	* 该构件线程安全		
  
 ### 函数说明
 
