@@ -25,7 +25,6 @@ import java.io.Console;
 import src.com.team8.License.License;
 
 public class Main {
-
 	/**
 	 * @param args
 	 */
@@ -33,14 +32,24 @@ public class Main {
 		// TODO Auto-generated method stub
 		License license = new License(2);
 		System.out.println("licenseTotalNum: "+license.getLicense());
+		System.out.println("licenseRemainNum: "+license.getRemain());
+		
 		System.out.println("licenseStatu: "+license.inLicense());
+		System.out.println("licenseRemainNum: "+license.getRemain());
+
 		System.out.println("licenseStatu: "+license.inLicense());
+		System.out.println("licenseRemainNum: "+license.getRemain());
+		
 		System.out.println("licenseStatu: "+license.inLicense());
+		System.out.println("licenseRemainNum: "+license.getRemain());
+		
 		System.out.println("licenseStatu: "+license.inLicense());
-		System.out.println("licenseTotalNum: "+license.getLicense());
+		System.out.println("licenseRemainNum: "+license.getRemain());
+
 	}
 
 }
+
 
 ```
  
@@ -49,11 +58,15 @@ public class Main {
 ```
 
 licenseTotalNum: 2
+licenseRemainNum: 2
 licenseStatu: true
+licenseRemainNum: 1
 licenseStatu: true
+licenseRemainNum: 0
 licenseStatu: false
+licenseRemainNum: 0
 licenseStatu: false
-licenseTotalNum: 2
+licenseRemainNum: 0
 
 ```
 
