@@ -19,11 +19,47 @@
 
 1. 下载jar包
 2. 在项目中添加jar包 ->Add External JARs
-3. 在Order and Export标签页中选定导入的包
-4. 开始项目
+3. 开始项目
 
 ##代码介绍
 
 使用语句 ：PM.sendPMMessage(String name,int value);即可发送相关消息
 
+
+##使用示例：
+
+``` java
+
+import com.team8.PerformanceManagement.PM;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		PM.sendPMMessage("First Message", 10);
+		PM.sendPMMessage("First Message", 3);
+		PM.sendPMMessage("Second Message", 5);
+		PM.sendPMMessage("Third Message", 8);
+		PM.sendPMMessage("Second Message", 5);
+		PM.sendPMMessage("First Message", 5);
+		PM.sendPMMessage("Second Message", 5);
+		
+	}
+
+}
+
+```
+
+###输出结果：
+
+```
+
+First Message:18
+Third Message:8
+Second Message:15
+
+```
 
