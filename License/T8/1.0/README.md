@@ -8,8 +8,9 @@
     * 如果不可以，返回false
 3. 支持多线程访问
 4. 不支持初始化License后额外增加License
-5. 可以调用 getLicense()方法获得剩余的License数量，该方法返回一个int值表示剩余的License数量
-6. 程序关闭后，License对象不会被自动保存
+5. 可以调用 getRemain()方法获得剩余的License数量，该方法返回一个int值表示剩余的License数量
+6. 可以调用 getLicense()方法获得初始的License数量，该方法返回一个int值表示初始的License数量
+7. 程序关闭后，License对象不会被自动保存
 
 ##使用说明：
 
