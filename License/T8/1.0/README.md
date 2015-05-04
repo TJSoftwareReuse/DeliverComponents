@@ -16,3 +16,44 @@
 1. 下载Jar包
 2. 将jar包添加到项目中
 3. 开始使用
+
+##使用示例：
+
+``` java
+
+import java.io.Console;
+import src.com.team8.License.License;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		License license = new License(2);
+		System.out.println("licenseTotalNum: "+license.getLicense());
+		System.out.println("licenseStatu: "+license.inLicense());
+		System.out.println("licenseStatu: "+license.inLicense());
+		System.out.println("licenseStatu: "+license.inLicense());
+		System.out.println("licenseStatu: "+license.inLicense());
+		System.out.println("licenseTotalNum: "+license.getLicense());
+	}
+
+}
+
+```
+ 
+###输出结果：
+
+```
+
+licenseTotalNum: 2
+licenseStatu: true
+licenseStatu: true
+licenseStatu: false
+licenseStatu: false
+licenseTotalNum: 2
+
+```
+
