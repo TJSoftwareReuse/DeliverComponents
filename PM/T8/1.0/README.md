@@ -1,6 +1,6 @@
 #这是PM模块的复用文档，该文档将会大致介绍这个项目
 
-##使用说明：
+##项目说明：
 
 1. 这是一个单例,不提供单独的构造函数,在一个项目中无法声明多个对象,无需声明额外对象
 2. 发送PM消息请调用  sendPMMessage(String name,int value) 方法,不支持其他格式其他类型的PM消息
@@ -15,5 +15,51 @@
 7. 该类中还提供其他几个方法,他们是为了提高测试人员进行测试使用的。不建议使用该模块的时候进行调用。
 8. 该类中的其他方法将在java doc中进行描述,详情请查看java doc开发文档
 
+##使用说明：
 
+1. 下载jar包
+2. 在项目中添加jar包 ->Add External JARs
+3. 开始项目
+
+##代码介绍
+
+使用语句 ：PM.sendPMMessage(String name,int value);即可发送相关消息
+
+
+##使用示例：
+
+``` java
+
+import com.team8.PerformanceManagement.PM;
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		PM.sendPMMessage("First Message", 10);
+		PM.sendPMMessage("First Message", 3);
+		PM.sendPMMessage("Second Message", 5);
+		PM.sendPMMessage("Third Message", 8);
+		PM.sendPMMessage("Second Message", 5);
+		PM.sendPMMessage("First Message", 5);
+		PM.sendPMMessage("Second Message", 5);
+		
+	}
+
+}
+
+```
+
+###输出结果：
+
+```
+
+First Message:18
+Third Message:8
+Second Message:15
+
+```
 
