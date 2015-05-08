@@ -1,0 +1,10 @@
+1.类CM的SearchKey方法:返回string类型的value
+2.类CM的getSize方法：返回int类型的value
+3.配置文件格式（key和value里不要有空格，否则读取的数据会不完整）
+	key value
+	key value
+	key value
+		.
+		.
+		.
+4.引入jar包：import cgfm.CM;
