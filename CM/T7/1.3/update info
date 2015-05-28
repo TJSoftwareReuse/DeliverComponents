@@ -1,0 +1,1 @@
+增加changeItem(string key,string value)可以修改配置项，返回布尔类型，成功为true，失败为false
