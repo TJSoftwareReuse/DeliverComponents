@@ -32,3 +32,5 @@ log4j.appender.FILE.layout.conversionPattern=%d{YYYY-MM-DD HH:mm:ss} %p %m%n
 
 用log4j.appender.FILE=org.apache.log4j.DailyRollingFileAppender，以及log4j.appender.file.datePattern=’.'yyyy-MM-dd-HH-mm-SS实现每秒检查一次
 
+##改了log文件的输出地址，然后把propertie文件放在了根目录下
+
