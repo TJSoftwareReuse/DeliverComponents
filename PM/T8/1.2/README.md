@@ -69,13 +69,15 @@ Second Message:15
 ##Release Notes
 
 ###v1.1
-貌似需要更改文件路径，所以添加了两个功能
-1. 功能1 PM.setPathName("newFilePath"); 设置新的文件路径
+由于需要更改文件路径，所以添加了两个功能
+
+1. PM.setPathName("newFilePath"); 设置新的文件路径
 	* 文件路径必须是已经存在的文件 可以是绝对路径，也可以是相对路径
 	* 允许最后一级文件夹不存在，程序只会自动创建最后一级的文件
 	* 文件路径不能为空，否则设置无效
 	* 默认路径是    "项目路径\LOG\"
-2. 功能2 PM.getPathName()
+
+2. PM.getPathName()
 	* 获得目前文件路径
 	* 实际上是调用setPathName时输入的数据
 	
@@ -105,5 +107,9 @@ public class Main {
 Console输出结果：
 
 F:\github\eclipse\fenyinLearning\android-swipelistview-master
+
+======
+###v1.2
+* 修复类unix系统文件路径识别错误的问题（感谢 @王笑盈 同学为我们提供的bug信息）
 
 
