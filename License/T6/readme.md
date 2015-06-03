@@ -33,3 +33,6 @@ __methods__
 >* public LisenceClass() -- construct method
 >* public bool useLisence() -- use lisence method
 >* __(new method)__ public void resetLisenceNum(int newNum) -- reset lisence number to __newNum__ and reset __UsedLicense__ to 0
+>* __(query interface)__ public int totalService() -- return total services can provided currently
+>* __(query interface)__ public int usedService() -- return used services currently
+>* __(query interface)__ public int restService() -- return services rest for use currently
